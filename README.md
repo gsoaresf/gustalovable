@@ -1,67 +1,67 @@
 # UIGen
 
-AI-powered React component generator with live preview.
+Gerador de componentes React com IA e preview em tempo real.
 
-## Prerequisites
+## Pré-requisitos
 
 - Node.js 18+
 - npm
 
-## Setup
+## Configuração
 
-1. **Optional** Edit `.env` and add your Anthropic API key:
+1. **Opcional** Edite o `.env` e adicione sua chave da API Anthropic:
 
 ```
-ANTHROPIC_API_KEY=your-api-key-here
+ANTHROPIC_API_KEY=sua-chave-aqui
 ```
 
-The project will run without an API key. Rather than using a LLM to generate components, static code will be returned instead.
+O projeto funciona sem a chave. Nesse caso, componentes estáticos de demonstração são retornados no lugar de geração com IA.
 
-2. Install dependencies and initialize database
+2. Instale as dependências e inicialize o banco de dados:
 
 ```bash
 npm run setup
 ```
 
-This command will:
+Esse comando irá:
 
-- Install all dependencies
-- Generate Prisma client
-- Run database migrations
+- Instalar todas as dependências
+- Gerar o cliente Prisma
+- Executar as migrações do banco de dados
 
-## Running the Application
+## Executando
 
-### Development
+### Desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Abra [http://localhost:3000](http://localhost:3000)
 
-## Usage
+## Como usar
 
-1. Sign up or continue as anonymous user
-2. Describe the React component you want to create in the chat
-3. View generated components in real-time preview
-4. Switch to Code view to see and edit the generated files
-5. Continue iterating with the AI to refine your components
+1. Crie uma conta ou continue como usuário anônimo
+2. Descreva o componente React que deseja criar no chat
+3. Visualize os componentes gerados no preview em tempo real
+4. Alterne para a aba Código para ver e editar os arquivos gerados
+5. Continue iterando com a IA para refinar seus componentes
 
-## Features
+## Funcionalidades
 
-- AI-powered component generation using Claude
-- Live preview with hot reload
-- Virtual file system (no files written to disk)
-- Syntax highlighting and code editor
-- Component persistence for registered users
-- Export generated code
+- Geração de componentes com IA (Claude)
+- Preview ao vivo com hot reload
+- Sistema de arquivos virtual (nada é escrito em disco)
+- Editor de código com syntax highlighting
+- Persistência de projetos para usuários registrados
+- Exportação do código gerado
 
-## Tech Stack
+## Tecnologias
 
-- Next.js 15 with App Router
+- Next.js 15 com App Router
 - React 19
 - TypeScript
 - Tailwind CSS v4
-- Prisma with SQLite
+- Prisma com SQLite
 - Anthropic Claude AI
 - Vercel AI SDK
